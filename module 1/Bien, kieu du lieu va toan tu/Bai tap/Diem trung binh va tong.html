@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diem Trung binh va tong</title>
+</head>
+<body>
+<script>
+
+var Vatly;
+var Hoahoc;
+var Sinhhoc;
+var DiemTrungBinh;
+var TongDiem;
+
+Vatly = Number(prompt("Nhap diem Vat Ly"));
+Hoahoc = Number(prompt("Nhap diem Hoa Hoc"));
+Sinhhoc = Number(prompt("Nhap diem Sinh Hoc"));
+
+DiemTrungBinh = (Vatly + Hoahoc + Sinhhoc)/3;
+TongDiem= Vatly + Hoahoc + Sinhhoc;
+
+document.write("Tong diem ba mon la " + TongDiem);
+document.write('<br/>');
+document.write("Diem trung binh ba mon la " + DiemTrungBinh);
+
+
+</script>
+</body>
+</html>
