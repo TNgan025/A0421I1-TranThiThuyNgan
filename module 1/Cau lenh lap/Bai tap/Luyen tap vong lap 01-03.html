@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap vong lap 01</title>
+</head>
+<body>
+<script>
+    //Bài 3: Hiển thị ra 20 số trong dãy fibonacci đầu tiên.
+
+    var f1 = 1, f2 = 1, count = 2;
+
+    document.write(f1 + "<br/>");
+    document.write(f2 + "<br/>");
+    while (count < 20) {
+
+        let temp = f1 + f2;
+        f1 = f2;
+        f2 = temp;
+        document.write(temp+"<br/>");
+        count++
+    }
+
+</script>
+</body>
+</html>

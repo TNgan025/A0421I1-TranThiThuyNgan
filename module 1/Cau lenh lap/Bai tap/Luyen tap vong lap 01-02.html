@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap vong lap</title>
+</head>
+<body>
+<script>
+
+//Bài 2: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập.
+// Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ. Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ.
+
+var nhietdo=parseInt(prompt("Nhap vao nhiet do hien tai"));
+while(nhietdo>20 && nhietdo<100) {
+    document.write("Nhiet do vua nhap vao la " +nhietdo+"<br/>");
+    nhietdo=parseInt(prompt("Nhap vao nhiet do hien tai"));
+} if(nhietdo<20){
+    alert("Tang nhiet do");
+} else {
+    alert("Giam nhiet do");
+}
+</script>
+</body>
+</html>

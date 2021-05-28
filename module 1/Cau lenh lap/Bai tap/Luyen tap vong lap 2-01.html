@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap vong lap 2</title>
+</head>
+<body>
+<script>
+    //Bài 1: In dãy Finonaci
+
+var f1 = 1, f2 = 1, count = 3;
+var num=parseInt(prompt("Nhap so luong so Finocaci can in ra: "));
+if(num===1) {
+    document.write(f1 + "<br/>");
+} else if(num===2){
+    document.write(f1 + "<br/>");
+    document.write(f2 + "<br/>");
+} else {
+document.write(f1 + "<br/>");
+document.write(f2 + "<br/>");
+
+    while (count <= num) {
+
+        let temp = f1 + f2;
+        f1 = f2;
+        f2 = temp;
+        document.write(temp+"<br/>");
+        count++
+    }
+}
+</script>
+
+</body>
+</html>

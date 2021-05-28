@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toan tu ba ngoi</title>
+</head>
+<body>
+<script>
+//Bài 1: Viết chương trình nhập vào giá trị cho a và b. Tính tổng a và b, nếu tổng nhỏ hơn 4, hiển thị chuỗi Below, ngược lại hiển thị Over.
+// Lưu ý sử dụng toán tử ? :
+let a = prompt("a: ");
+let b = prompt("b: ");
+
+if((a+b)<4) {
+    alert("Below");
+}
+else {
+    alert("Over");
+}
+//Bài 2: Viết chương trình nhập vào giá trị cho chuỗi message.
+//Nếu giá trị nhập vào là Employee thì hiển thị chuỗi Hello.
+//Còn lại nếu giá trị nhập vào là Director thì hiển thị chuỗi Greetings
+//Còn lại nếu giá trị nhập vào chuỗi rỗng thì hiển thị No login
+//Còn lại hiển thị chuỗi rỗng
+
+var message=prompt("Nhap vao message");
+if(message=="Employee") {
+    alert("Hello");
+} else if(message=="Director") {
+    alert("Greetings");
+} else if(message=" ") {
+    alert("No login");
+} else {
+    alert(" ")
+}
+</script>
+</body>
+</html>
