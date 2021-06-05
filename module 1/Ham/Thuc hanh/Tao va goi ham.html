@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tao va goi ham</title>
+</head>
+<body>
+<script>
+    //Tạo hàm processConfirm
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "Excellent. We'll play a nice game of chess.";
+        } else {
+            result = "Maybe later then.";
+        }
+        return result;
+    }
+
+    //Tạo hộp thoại xác nhận, gọi hàm processConfirm() và hiển thị kết quả
+
+    // let confirmAnswer = confirm("Shall we play a game?");
+    // let theAnswer = processConfirm(confirmAnswer);
+    // alert(theAnswer);
+
+ let answer=confirm("Shall we play a game?");
+ alert(processConfirm(answer))
+
+</script>
+</body>
+</html>
