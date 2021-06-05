@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap mang 01</title>
+</head>
+<body>
+<script>
+//Bài 3- Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó.
+//In ra giá trị trung bình của các phần tử trong mảng.
+
+var Array=[1,2,57,9,10,15,17,19,20,12]
+var max=Array[0];
+
+for(var i=1; i<Array.length; i++) {
+    if(Array[i]>=max) {
+        max=Array[i]
+    }
+}
+document.write("Phan tu co gia tri lon nhat la: "+max +"<br/>");
+
+//In ra giá trị trung bình của các phần tử trong mảng.
+var sum=0;
+for(i=0; i<Array.length; i++) {
+    sum=sum+Array[i];
+}
+var average=(sum/Array.length);
+
+document.write("Gia tri trung binh cua cac phan tu la: "+average);
+
+
+</script>
+</body>
+</html>
