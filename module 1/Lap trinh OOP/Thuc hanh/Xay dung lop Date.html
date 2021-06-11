@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+class Date {
+    constructor(day, month, year) {
+      this.day = day;
+      this.month = month;
+      this.year = year;
+    }
+    setDate(day) {
+        this.day = day;
+    }
+    setMonth(month) {
+        this.month = month;
+    }
+    setYear(year) {
+        this.year = year
+    }
+    getContent() {
+        return "day: "+this.day +", month: "+this.month+ ",year: "+this.year;
+    }
+}
+
+let Date1 = new Date(2,2,2007);
+alert(Date1.getContent());
+
+let Date2 = new Date();
+Date2.setDate(10);
+Date2.setMonth(10);
+Date2.setYear(2019);
+
+alert(Date2.getContent());
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+class Circle {
+    constructor(radius, color) {
+        this.radius = radius;
+        this.color = color;
+    }
+    getContent() {
+        return "radius: "+this.radius
+    }
+}
+let Circle1 = new Circle(3,5);
+let S=Math.PI * Circle1.radius * Circle1.radius;
+alert(S)
+
+</script>
+</body>
+</html>
