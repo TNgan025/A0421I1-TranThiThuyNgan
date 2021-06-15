@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap mang 01</title>
+</head>
+<body>
+<script>
+
+//Bài 7- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+// Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng
+// (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)
+var Array=[];
+for(var i=0; i<10; i++) {
+    Array[i]=parseInt(prompt("Nhập vào phần tử thứ "+ (i+1) +" của mảng gồm 10 phần tử"));
+}
+var v=parseInt(prompt("Nhập vào phần tử V: "));
+
+for(var j=0; j<10; j++) {
+    if(Array[j]==v) {
+        Array.splice(j,1);
+        Array.push[0];
+        alert(Array)
+    }
+    }
+
+</script>
+</body>
+</html>

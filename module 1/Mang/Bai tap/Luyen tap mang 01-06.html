@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap mang 01</title>
+</head>
+<body>
+<script>
+
+//Bài 6- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+// Chương trình tìm xem V có nằm trong mảng số nguyên không?
+// Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".
+var Array=[];
+for(var i=0; i<10; i++) {
+    Array[i]=parseInt(prompt("Nhập vào phần tử thứ "+ (i+1) +" của mảng gồm 10 phần tử"));
+}
+var v=parseInt(prompt("Nhập vào phần tử V: "));
+// alert(Array)
+// alert(typeof(Array[5]));
+// alert(typeof(V));
+
+for(var j=0; j<10; j++) {
+    if(Array[j] === v) {
+        alert(+v+" is in the array");
+    } else {
+        alert(+v+" is not in the array");
+        break;
+    }
+}
+
+
+</script>
+</body>
+</html>

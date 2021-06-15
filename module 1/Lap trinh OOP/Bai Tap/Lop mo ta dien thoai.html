@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Phone {
+        constructor(status, battery, DraftMs, InboxMs, OutboxMs) {
+            this.status = status;
+            this.battery = battery;
+            this.DraftMs = DraftMs;
+            this.InboxMs = InboxMs;
+            this.OutboxMs = OutboxMs;
+        }
+
+        checkStatus() {
+            this.battery--;
+            return this.status;
+        }
+
+        turnOn() {
+            this.battery--;
+            this.status = true;
+        }
+
+        turnOff() {
+            this.battery--;
+            this.status = false;
+        }
+
+        chargeBattery() {
+            this.battery--;
+            return ("Phone charging")
+        }
+
+        textMs() {
+            this.battery--;
+            return this.DraftMs;
+        }
+
+        receiveMs() {
+            this.battery--;
+            return this.InboxMs;
+        }
+
+        sendMs() {
+            this.battery--;
+            return this.OutboxMs;
+        }
+
+        checkInbox() {
+            this.battery--;
+            return this.InboxMs;
+        }
+
+        checkOutbox() {
+            this.battery--;
+            return this.OutboxMs;
+        }
+    }
+
+    var Nokiastatus = confirm("Is Nokia active?");
+    var Iphonestatus = confirm("Is Iphone active?");
+    var Ms = prompt("Message:..");
+    var Nokia = new Phone(Nokiastatus, 100, 0, 0, Ms);
+    var Iphone = new Phone(Iphonestatus, 50, 0, Ms, 0);
+
+    if (Nokiastatus == false || Iphonestatus == false) {
+        alert("Phone is off");
+    } else {
+        Nokia.sendMs();
+        Iphone.receiveMs();
+        alert(Iphone.InboxMs);
+    }
+</script>
+</body>
+</html>

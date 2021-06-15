@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+class Temperature {
+    constructor(nhietdo) {
+        this.nhietdo=nhietdo;
+    }
+    transCtoF() {
+        let doF = this.nhietdo*1.8 + 32;
+        return alert("Nhiet do theo do F la: "+doF)
+    }
+    transCtoKenvin() {
+        let doK = this.nhietdo + 273.15;
+        return alert("Nhiet do theo do Kenvin la: "+doK)
+    }
+}
+let temperature = new Temperature(25);
+temperature.transCtoF();
+temperature.transCtoKenvin();
+
+</script>
+</body>
+</html>
