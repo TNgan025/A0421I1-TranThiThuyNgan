@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //Bài 4: Viết một chường trình nhập một số từ bàn phím và in ra màn hình bằng chữ. Ví dụ 1234, kết quả in ra màn hình là một hai ba bốn.
+    var a = prompt("Nhập vào một số bất kỳ");
+    for (i = 0; i < a.length; i++) {
+        switch (a.charAt(i)) {
+            case "0":
+                alert("Không");
+                break;
+            case "1":
+                alert("Một");
+                break;
+            case "2":
+                alert("Hai");
+                break;
+            case "3":
+                alert("Ba");
+                break;
+            case "4":
+                alert("Bốn");
+                break;
+            case "5":
+                alert("Năm");
+                break;
+            case "6":
+                alert("Sáu");
+                break;
+            case "7":
+                alert("Bảy");
+                break;
+            case "8":
+                alert("Tám");
+                break;
+            default:
+                alert("Chín");
+        }
+    }
+
+</script>
+</body>
+</html>

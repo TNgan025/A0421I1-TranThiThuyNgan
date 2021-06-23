@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 1: Cho mảng a chỉ chứa các số nguyên
+    //Xây dựng mảng b là prefix sums của mảng a cụ thể theo công thức:
+    //     b[0]   = a[0]
+    // b[1]   = a[0] + a[1]
+    // b[2]   = a[0] + a[1] + a[2]
+    // ...
+    // b[n - 1] = a[0] + a[1] + ... + a[n - 1]
+    // với n là độ dài của mảng a.
+    //     Ví dụ: Cho a = [1, 2, 3], thì kết quả prefixSums(a) = [1, 3, 6].
+    //     Mảng b được tạo ra: [1, 1 + 2, 1 + 2 + 3] = [1, 3, 6]
+    var a = [];
+    var n = parseInt(prompt("Nhập vào độ dài của mảng"));
+    for (i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("Nhập vào phần tử thứ " + (i + 1) + " của mảng"));
+    }
+    var b=[];
+    b[0]=a[0];
+    for(i=1; i<a.length;i++) {
+
+        b[i]=b[i-1]+a[i];
+    }
+    alert(b);
+
+</script>
+</body>
+</html>
