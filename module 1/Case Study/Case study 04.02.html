@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 2: Cho xâu kí tự. Hãy đếm số lượng kí tự khác nhau trong xâu đó
+    //  Ví dụ: s = "cabca", thì kết quả differentSymbolsNaive(s) = 3.
+    // =>Có 3 kí tự khác nhau là a, b và c.
+
+    var s = "cabca";
+    var arr = [];
+    function countNotDuplicate(s) {
+        var arr = [];
+        for (let i = 0; i <s.length; i++) {
+            if (!arr.includes(s[i])) {
+                arr.push(s[i]);
+            }
+        }
+        alert(arr.length);
+    }
+    countNotDuplicate(s);
+
+
+</script>
+</body>
+</html>
