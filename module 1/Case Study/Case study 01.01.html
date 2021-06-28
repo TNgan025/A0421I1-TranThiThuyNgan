@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 1: Vẽ hình chữ nhật rỗng chiều dài n và chiều rộng m theo hình dưới đây.
+    // Ví dụ: x = 4, y = 5
+    var chieudai = parseInt(prompt("Nhập vào chiều dài của hình chữ nhật: "));
+    var chieurong = parseInt(prompt("Nhập vào chiều rộng của hình chữ nhật: "));
+
+    for (var i = 1; i <= chieudai; i++) {
+        for (let j = 1; j <= chieurong; j++) {
+            if (i == 1 || i == chieudai || j == 1 || j == chieurong) {
+                document.write('*');
+            } else {
+                document.write("&nbsp;&nbsp");
+            }
+        }
+        document.write("<br/>");
+    }
+
+</script>
+</body>
+</html>

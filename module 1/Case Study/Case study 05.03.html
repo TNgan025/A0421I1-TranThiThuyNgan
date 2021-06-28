@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 3: Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều
+
+    var n = parseInt(prompt("Nhap n: "));
+    var m = parseInt(prompt("Nhap m: "));
+    var array = new Array(n);
+    for (let i = 0; i < array.length; i++) {
+        array[i] = new Array(m);
+        for (let j = 0; j < array[i].length; j++) {
+            array[i][j] = parseInt(prompt("Nhap phan tu array[" + i + "][" + j + "];"));
+        }
+    }
+    var max = array[0][0];
+    for (var i = 0; i < n; i++) {
+        for (var j = 0; j < m; j++) {
+            if (array[i][j] > max) {
+                max = array[i][j];
+            }
+        }
+    }
+    alert("Phần tử lớn nhất là: " + max);
+    var min = array[0][0];
+    for (var i = 0; i < n; i++) {
+        for (var j = 0; j < m; j++) {
+            if (array[i][j] < min) {
+                min = array[i][j];
+            }
+        }
+    }
+    alert("Phần tử nhỏ nhất là: " + min);
+
+</script>
+</body>
+</html>
