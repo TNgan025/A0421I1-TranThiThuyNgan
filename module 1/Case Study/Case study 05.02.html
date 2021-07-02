@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//Bài 2: Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có trong mảng đó.
+
+var n = parseInt(prompt("Nhap n: "));
+var m = parseInt(prompt("Nhap m: "));
+var array = new Array(n);
+for (let i = 0; i < array.length; i++) {
+    array[i] = new Array(m);
+    for (let j = 0; j < array[i].length; j++) {
+        array[i][j] = parseInt(prompt("Nhap phan tu array[" + i + "][" + j + "];"));
+    }
+}
+function prime() {
+    for(var i=0; i<n; i++) {
+        for (var j = 0; j < m; j++) {
+            var isPrime=true;
+            for(var k=2; k<=(array[i][j]/2);k++) {
+            if(array[i][j]%k === 0) {
+                isPrime=false;
+                break;
+            }
+            }
+            if(isPrime) {
+                alert("Số nguyên tố là: "+array[i][j]);
+            }
+        }
+        }
+}
+prime();
+
+
+
+
+</script>
+</body>
+</html>
