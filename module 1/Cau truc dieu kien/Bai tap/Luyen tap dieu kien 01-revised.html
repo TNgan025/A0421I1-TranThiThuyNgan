@@ -66,15 +66,15 @@ var kiemTra2=parseInt(prompt("Nhap vao so diem cua bai kiem tra so 2"));
 var kiemTra3=parseInt(prompt("Nhap vao so diem cua bai kiem tra so 3"));
 var giuaKy=parseInt(prompt("Nhap vao so diem cua bai thi giua ky"));
 var cuoiKy=parseInt(prompt("Nhap vao so diem cua bai thi cuoi ky"));
-var dTB=(kiemTra1+kiemTra2+kiemTra3+giuaKy*2+cuoiKy*3);
+var diemTrungBinh=(kiemTra1+kiemTra2+kiemTra3+giuaKy*2+cuoiKy*3);
 
-if(dTB>=75) {
+if(diemTrungBinh>=75) {
     alert("Hoc sinh loai A");
-} else if(dTB>=60) {
+} else if(diemTrungBinh>=60) {
     alert("Hoc sinh loai B");
-} else if(dTB>=45) {
+} else if(diemTrungBinh>=45) {
     alert("Hoc sinh loai C");
-} else if(dTB>=35) {
+} else if(diemTrungBinh>=35) {
     alert("Hoc sinh loai D");
 } else { alert("Hoc sinh loai E");
 };
