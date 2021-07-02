@@ -18,19 +18,21 @@ else {alert("khong chia het")};
 
 //Bai 2:Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.
 
-var sotuoi=parseInt(prompt("Nhap vao so tuoi cua hoc sinh: "));
+var soTuoi=parseInt(prompt("Nhap vao so tuoi cua hoc sinh: "));
 
-if(sotuoi<15) {
+if(soTuoi<15) {
     alert("Hoc sinh khong du tuoi vao lop 10");
+} else {
+    alert("Hoc sinh du tuoi vao lop 10");
 }
 //Bai 3:Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0
 
-var songuyen=parseInt(prompt("Nhap vao so nguyen bat ky"));
+var soNguyen=parseInt(prompt("Nhap vao so nguyen bat ky"));
 
-if(songuyen<0){
+if(soNguyen<0){
     alert("So vua nhap be hon 0");
 }
-else if (songuyen==0){
+else if (soNguyen==0){
     alert("So vua nhap bang 0");
 }
 else {alert("So vua nhap lon hon 0")};
@@ -59,20 +61,20 @@ else {
 //Bai 5:Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ
 //Gia thiet có 2 bài kiem tra (he so 1); 1 bai giưa ky (he so 3), 1 bai cuoi ky (he so 4)
 
-var kiemtra1=parseInt(prompt("Nhap vao so diem cua bai kiem tra so 1"));
-var kiemtra2=parseInt(prompt("Nhap vao so diem cua bai kiem tra so 2"));
-var kiemtra3=parseInt(prompt("Nhap vao so diem cua bai kiem tra so 3"));
-var giuaky=parseInt(prompt("Nhap vao so diem cua bai thi giua ky"));
-var cuoiky=parseInt(prompt("Nhap vao so diem cua bai thi cuoi ky"));
-var DTB=(kiemtra1+kiemtra2+kiemtra3+giuaky*2+cuoiky*3);
+var kiemTra1=parseInt(prompt("Nhap vao so diem cua bai kiem tra so 1"));
+var kiemTra2=parseInt(prompt("Nhap vao so diem cua bai kiem tra so 2"));
+var kiemTra3=parseInt(prompt("Nhap vao so diem cua bai kiem tra so 3"));
+var giuaKy=parseInt(prompt("Nhap vao so diem cua bai thi giua ky"));
+var cuoiKy=parseInt(prompt("Nhap vao so diem cua bai thi cuoi ky"));
+var dTB=(kiemTra1+kiemTra2+kiemTra3+giuaKy*2+cuoiKy*3);
 
-if(DTB>=75) {
+if(dTB>=75) {
     alert("Hoc sinh loai A");
-} else if(DTB>=60) {
+} else if(dTB>=60) {
     alert("Hoc sinh loai B");
-} else if(DTB>=45) {
+} else if(dTB>=45) {
     alert("Hoc sinh loai C");
-} else if(DTB>=35) {
+} else if(dTB>=35) {
     alert("Hoc sinh loai D");
 } else { alert("Hoc sinh loai E");
 };
@@ -80,35 +82,35 @@ if(DTB>=75) {
 //Bai 6:Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng
 // Gia thiet: tu 0-10 trieu: 2%; tu 10 trieu -100 trieu: 5%; tư 100 trieu tro len: 8%
 
-var doanhso=parseInt(prompt("Nhap vao doanh so cua thang (trieu VND)"));
-var hoahong;
-if(doanhso<0){
-    doanhso=parseInt(prompt("Doanh so phai lon hon 0, Nhap vao doanh so cua thang (trieu VND)"));
-} else if(doanhso<10) {
-    hoahong=doanhso*2/100
-    alert("Hoa hong thang nay la: "+hoahong+" trieu dong");
-} else if(doanhso<100) {
-    hoahong=doanhso*5/100
-        alert("Hoa hong thang nay la: "+hoahong+" trieu dong");
+var doanhSo=parseInt(prompt("Nhap vao doanh so cua thang (trieu VND)"));
+var hoaHong;
+if(doanhSo<0){
+    doanhSo=parseInt(prompt("Doanh so phai lon hon 0, Nhap vao doanh so cua thang (trieu VND)"));
+} else if(doanhSo<10) {
+    hoaHong=doanhSo*2/100
+    alert("Hoa hong thang nay la: "+hoaHong+" trieu dong");
+} else if(doanhSo<100) {
+    hoaHong=doanhSo*5/100
+        alert("Hoa hong thang nay la: "+hoaHong+" trieu dong");
 } else {
-    hoahong=doanhso*8/100
-        alert("Hoa hong thang nay la: "+hoahong+" trieu dong");
+    hoaHong=doanhSo*8/100
+        alert("Hoa hong thang nay la: "+hoaHong+" trieu dong");
 };
 
 //Bai 7:Tính cước điện thoại cho một hộ gia đình với các thông số đã cho
  // Gia thiet: Gói trả trước - gọi nội mạng 200VND/phút; gọi ngoại mạng 1,000 VND/phút
 // Gói trả sau: gọi nội mạng 100VND/phút; gọi ngoại mạng 500 VND/phút
 
-var loaigoicuoc=confirm("Ban dang dung goi cuoc tra truoc?")
-var noimang=parseInt(prompt("Nhap vao so phut goi noi mang cua thang (phut)"));
-var ngoaimang=parseInt(prompt("Nhap vao so phut goi ngoai mang cua thang (phut)"));
-var cuocdienthoai;
-if(loaigoicuoc) {
-    cuocdienthoai=noimang*200+ngoaimang*1000;
-    alert("So tien cuoc dien thoai thang nay la: "+cuocdienthoai);
+var loaiGoiCuoc=confirm("Ban dang dung goi cuoc tra truoc?")
+var noiMang=parseInt(prompt("Nhap vao so phut goi noi mang cua thang (phut)"));
+var ngoaiMang=parseInt(prompt("Nhap vao so phut goi ngoai mang cua thang (phut)"));
+var cuocDienThoai;
+if(loaiGoiCuoc) {
+    cuocDienThoai=noiMang*200+ngoaiMang*1000;
+    alert("So tien cuoc dien thoai thang nay la: "+cuocDienThoai);
 } else {
-    cuocdienthoai=noimang*100+ngoaimang*500;
-    alert("So tien cuoc dien thoai thang nay la: "+cuocdienthoai);
+    cuocDienThoai=noiMang*100+ngoaiMang*500;
+    alert("So tien cuoc dien thoai thang nay la: "+cuocDienThoai);
 };
 
 </script>
