@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="english">
+    <input type="button" value="Translate" onclick="look_up()">
+    <p id="vietnamese"></p>
+
+<script>
+    let engWord = document.getElementById("english");
+    let eng = ["book", "pen", "pencil", "board", "ruler", "student", "bag", "eraser", "school", "teacher", "stapler", "scissors"];
+    let vie = ["sách", "bút mực, bút bi", "bút chì", "bảng", "thước", "học sinh", "cặp, túi", "tẩy", "trường học", "giáo viên", "cái bấm", "cái kéo"];
+    let count =0;
+
+    function look_up() {
+        for (let i=0; i<eng.length; i++) {
+            if (eng[i] == engWord.value) {
+                count=0;
+                document.getElementById("vietnamese").innerHTML = vie[i];
+                break;
+            } else {
+                count++;
+            }
+        }
+        if(count != 0){
+            alert("Sorry. The word cannot be found.");
+        }
+    }
+
+</script>
+</body>
+</html>
