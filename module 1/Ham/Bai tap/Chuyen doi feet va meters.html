@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var meter;
+    var foot;
+
+    function footToMeter(foot) {
+        foot = parseInt(prompt("Foot?"));
+        meter = 0.305 * foot;
+        return meter;
+    }
+    alert("meter: " + footToMeter(foot));
+    function meterToFoot(meter) {
+        meter = parseInt(prompt("Meter?"));
+        foot = 3.279 * meter;
+        return foot;
+    }
+    alert("foot: " + meterToFoot(meter));
+
+</script>
+</body>
+</html>

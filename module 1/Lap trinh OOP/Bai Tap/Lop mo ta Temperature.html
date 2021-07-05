@@ -7,16 +7,16 @@
 <body>
 <script>
 class Temperature {
-    constructor(nhietdo) {
-        this.nhietdo=nhietdo;
+    constructor(temperature) {
+        this.temperature=temperature;
     }
     transCtoF() {
-        let doF = this.nhietdo*1.8 + 32;
-        return alert("Nhiet do theo do F la: "+doF)
+        let degreeF = this.temperature*1.8 + 32;
+        return alert("Nhiet do theo do F la: "+degreeF)
     }
     transCtoKenvin() {
-        let doK = this.nhietdo + 273.15;
-        return alert("Nhiet do theo do Kenvin la: "+doK)
+        let degreeK = this.temperature + 273.15;
+        return alert("Nhiet do theo do Kenvin la: "+degreeK)
     }
 }
 let temperature = new Temperature(25);

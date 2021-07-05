@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//để kiểm tra xem một số nguyên bất kỳ có phải là số nguyên tố hay không. //
+// Sử dụng phương thức này để tìm tất cả các số nguyên tố nhỏ hơn 10000.
+function checkPrime() {
+    var n=2;
+    while(n<10000) {
+        var isPrime=true;
+        for (var i = 2; i <= n/2; i++) {
+            if (n % i === 0) {
+                isPrime=false;
+                break;
+            }
+        }
+        if (isPrime) {
+            document.write(+n+"<br/>");
+        }
+        n++;
+    }
+}
+document.write(checkPrime());
+
+</script>
+</body>
+</html>

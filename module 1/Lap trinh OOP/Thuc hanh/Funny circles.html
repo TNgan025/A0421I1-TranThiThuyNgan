@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funny circles</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="400"></canvas>
+<script>
+    //Vẽ một hình tròn đơn giản với kích thước cố định
+    class Circle {
+        constructor(x, y, radius) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius
+        }
+
+        drawCircle() {
+            let canvas = document.getElementById("myCanvas");
+            let draw = canvas.getContext("2d");
+            draw.beginPath();
+            draw.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+            draw.stroke()
+        }
+        getRandomColor() {
+            var red = getRandomHex();
+            var green = getRandomHex();
+            var blue = getRandomHex();
+            return "rgb(" + red + "," + blue + "," + green +")";
+        }
+    }
+
+    //Vẽ một hình tròn đơn giản với kích thước cố định
+    let Circle1 = new Circle(50, 50, 30);
+    Circle1.drawCircle();
+    //Vẽ hình tròn với bán kính ngẫu nhiên
+    let Circle2 = new Circle(100, 100, Math.random());
+    Circle2.drawCircle();
+    //Vẽ hình tròn với màu ngẫu nhiên
+
+    // Vẽ được hình tròn với vị trí ngẫu nhiên
+    let Circle4 = new Circle(Math.random(),Math.random(),50);
+    Circle4.drawCircle();
+
+</script>
+</body>
+</html>

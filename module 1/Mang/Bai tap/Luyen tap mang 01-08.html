@@ -8,12 +8,12 @@
 <script>
     //Bài 8- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử.
     // Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
-    var Array = [];
+    var array = [];
     for (var i = 0; i < 10; i++) {
-        Array[i] = parseInt(prompt("Nhập vào phần tử thứ " + (i + 1) + " của mảng gồm 10 phần tử"));
+        array[i] = parseInt(prompt("Nhập vào phần tử thứ " + (i + 1) + " của mảng gồm 10 phần tử"));
     }
 
-    alert(Array.sort(function(a,b)
+    alert(array.sort(function(a,b)
     {
         return a - b;
     }

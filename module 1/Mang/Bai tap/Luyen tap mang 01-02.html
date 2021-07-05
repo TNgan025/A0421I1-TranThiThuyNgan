@@ -9,18 +9,18 @@
 //Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau.
 //Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.
 
-var Array=[1,2,57,9,10,15,17,19,20,12]
+var array=[1,2,57,9,10,15,17,19,20,12]
 
-var max=Array[0];
+var max=array[0];
 
-for(var i=1; i<=Array.length; i++) {
-    if(Array[i]>=max) {
-        max=Array[i]
+for(var i=1; i<=array.length; i++) {
+    if(array[i]>=max) {
+        max=array[i]
     }
 
 }
 document.write("Phan tu co gia tri lon nhat la: "+max +"<br/>")
-document.write("Vi tri cua phan tu co gia tri lon nhat la: "+Array.indexOf(max,0))
+document.write("Vi tri cua phan tu co gia tri lon nhat la: "+array.indexOf(max,0))
 </script>
 </body>
 </html>

@@ -21,12 +21,13 @@
     var a=prompt("Nhập tên 1 ngôi sao trong số  Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe và Regulus:");
 
         if (arr1.indexOf(a)>=0) {
-            alert(arr2[arr1.indexOf(a)]);
+            return arr2[arr1.indexOf(a)];
             } else {
-                alert("Không tìm thấy ngôi sao nào");
+                return "Không tìm thấy ngôi sao nào";
         }
     }
-checkStar()
+alert(checkStar());
+
 
 </script>
 </body>
