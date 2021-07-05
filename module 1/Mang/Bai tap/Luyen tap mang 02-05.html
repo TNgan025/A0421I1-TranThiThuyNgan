@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+    var string1 = prompt("Nhập vào chuỗi 1");
+    var string2 = prompt("Nhập vào chuỗi 2");
+    var compare = true;
+
+    if (string1.length !== string2.length) {
+        document.write("Hai chuỗi khác nhau");
+    } else {
+        for(i=0;i<string1.length;i++) {
+        for (j=0; j<string2.length;j++) {
+            if(string1[i]===string2[j]) {
+                alert("Hai chuỗi giống nhau");
+            }
+            else {
+                alert("Hai chuỗi khác nhau");
+            }
+        }
+        }
+    }
+</script>
+</body>
+</html>

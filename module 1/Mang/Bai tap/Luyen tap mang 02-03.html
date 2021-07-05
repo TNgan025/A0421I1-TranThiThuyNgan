@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết một chương trình khai báo một mảng ký tự và kích thước của mảng. Chương trình này đếm số ký tự số trong mảng.
+    var array = ["17xy", 99, "flowers", "beach", 5, "river", 10, "summer", "spring", "mountain", 35, "etc.."];
+    var count=0;
+    for(var i=0; i<array.length; i++) {
+        if (typeof array[i] == "number"){
+            count++;
+        }
+    }
+    document.write("Mảng có " + count + " số");
+</script>
+</body>
+</html>

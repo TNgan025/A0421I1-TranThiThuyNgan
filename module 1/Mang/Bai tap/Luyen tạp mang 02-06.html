@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
+    var array=[];
+    let num;
+    do{
+        num=prompt("Nhập vào số lượng phần tử của mảng: ")
+    } while(num<=0 && isNaN(num));
+
+    for(var i=0; i<num; i++) {
+        array[i]=prompt("Nhập vào phần tử thứ "+i);
+    }
+    for(i=0; i<array.length; i++) {
+        if(array[i]==="-") {
+            array[i]="_";
+        }
+    }
+    alert(array);
+</script>
+</body>
+</html>
