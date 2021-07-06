@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+    function swap(array) {
+        let temp= array[0];
+        array[0]=array[1];
+        array[1]=temp;
+    }
+    function swapAB() {
+        let a = parseInt(prompt("Input a"));
+        let b = parseInt(prompt("Input b"));
+        let arr=[a,b];
+        swap(arr);
+        document.write("a = "+arr[0]+" and b = "+arr[1]);
+    }
+    swapAB();
+
+</script>
+</body>
+</html>
