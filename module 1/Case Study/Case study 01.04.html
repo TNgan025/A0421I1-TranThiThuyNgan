@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//Bài 4: Vẽ tam giác cân rỗng có chiều cao h. Ví dụ: h = 5
+var chieuCao = parseInt(prompt("Nhập vào chiều cao của hình tam giác cân: "));
+var chieuRong = chieuCao*2 -1;
+var hinhVe ="";
+for (let i = 1; i <= chieuCao; i++) {
+    for (j = 0; j < chieuRong / 2 - i; j++) {
+        hinhVe += "&nbsp;&nbsp";
+    }
+    for (k = 0; k < i * 2 - 1; k++) {
+        if (i === chieuCao) {
+            hinhVe += "*";
+        } else if (k === 0 || k === i * 2 - 2) {
+            hinhVe += "*";
+        } else {
+            hinhVe += "&nbsp;&nbsp";
+        }
+    }
+    hinhVe += "<br>";
+}
+document.write(hinhVe);
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>MENU</h1>
+
+<script>
+
+    //Bài 5: Giả sử menu của chúng ta có các loại thức uống như sau:
+    // Cafe
+    // Cam vắt
+    // Nước ép cà rốt
+    // Nước ép cà chua
+    // Nước lọc
+    // Nước dừa
+    // Viết một chương trình gọi thức uống đơn giản.
+    // Gợi ý: Trước tiên in ra màn hinh danh sách các loại thức uống cho người dùng chọn lựa
+    // Đánh dấu theo thứ tự 1 (cafe), 2 (cam vắt), 3(nước ép cà rốt), 4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát gọi món)
+    // Khi người dùng lựa chọn Cam vắt1 trong số các thức uống, chương trình sẽ hiện đơn giá của thức uống đó và cho phép người dùng nhập số lượng.
+    // Cuối cùng hiển thị tổng số tiền người dùng cần phải trả.
+    // Sử dụng vòng lặp do while lặp lại cho người dùng đặt thức uống, kết thúc quá trình đặt thức uống khi người nhấn số 7
+    let menu = "Mời bạn chọn đồ uống \n" +
+        "1.Cafe \n" +
+        "2.Cam vắt \n" +
+        "3.Nước ép cà rốt \n" +
+        "4.Nước ép cà chua \n" +
+        "5.Nước lọc\n" +
+        "6.Nước dừa\n" +
+        "7.Thoát chọn đồ uống";
+    let choose;
+    let total;
+    do {
+        choose = parseInt(prompt(menu));
+        let amount = 0;
+        let price = 0;
+        switch (choose) {
+            case 1:
+                price = 10000;
+                break;
+            case 2:
+                price = 15000;
+                break;
+            case 3:
+                price = 17000;
+                break;
+            case 4:
+                price = 18000;
+                break;
+            case 5:
+                price = 7000;
+                break;
+            case 6:
+                price = 12000;
+                break;
+            case 7:
+                continue;
+        }
+        amount = parseInt(prompt("Nhập vào số lượng đồ uống: "));
+        total = amount * price;
+
+    } while (choose !== 7)
+    alert("Tổng số tiền người dùng phải trả là: " + total);
+
+
+</script>
+</body>
+</html>
