@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    var x=parseInt(prompt("Nhập vào một số: "));
+    var ketQua = 1;
+    function tinhGiaiThua(x) {
+        for(let i=1; i<=x; i++) {
+            ketQua=ketQua*i;
+        }
+        return ketQua;
+    }
+    alert("Giai thừa của số "+x+ " là: "+tinhGiaiThua(x));
+</script>
+</body>
+</html>

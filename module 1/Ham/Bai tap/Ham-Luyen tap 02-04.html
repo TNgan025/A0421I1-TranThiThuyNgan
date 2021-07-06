@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+    var x=prompt("Nhập vào một số/ký tự");
+
+    function kiemTraso(x) {
+        if(parseInt(x)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    alert(kiemTraso(x));
+
+</script>
+</body>
+</html>
