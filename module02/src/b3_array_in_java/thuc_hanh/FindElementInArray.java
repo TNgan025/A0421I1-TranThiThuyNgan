@@ -8,15 +8,13 @@ public class FindElementInArray {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a name’s student:");
         String name = scanner.nextLine();
-
-        for (int i = 0; i <students.length; i++) {
-            if(students[i].equals(name)) {
+        for (int i = 0; i < students.length; i++) {
+            if (students[i].equals(name)) {
                 System.out.println("Position of the students in the list " + name + " is: " + (i + 1));
-            }
-            else {
+            } else {
                 System.out.println("Not found " + name + " in the list.");
                 break;
-        }
+            }
 
         }
     }
