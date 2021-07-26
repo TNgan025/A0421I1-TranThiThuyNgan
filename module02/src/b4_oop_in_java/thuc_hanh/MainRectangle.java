@@ -9,9 +9,9 @@ public class MainRectangle {
         double width = scanner.nextDouble();
         System.out.println("Input height");
         double height = scanner.nextDouble();
-        Rectangle rec1 = new Rectangle(width,height);
-        System.out.println("Your Rectangle:"+rec1.display());
-        System.out.println("Area:"+rec1.getArea());
-        System.out.println("Perimeter: "+rec1.getPerimeter());
+        Rectangle rec1 = new Rectangle(width, height);
+        System.out.println("Your Rectangle:" + rec1.display());
+        System.out.println("Area:" + rec1.getArea());
+        System.out.println("Perimeter: " + rec1.getPerimeter());
     }
 }
