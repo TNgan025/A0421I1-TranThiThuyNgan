@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class DisplayDrawing {
     public static void main(String[] args) {
         int choice = -1;
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("Menu");
         System.out.println("1. Print the triangle");
