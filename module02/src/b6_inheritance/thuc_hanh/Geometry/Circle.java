@@ -1,7 +1,7 @@
 package b6_inheritance.thuc_hanh.Circle;
 
 public class Circle extends Shape {
-    private double radius = 1.0;
+    public double radius = 1.0;
     public Circle() {
     }
     public Circle(double radius) {

@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/b7_abstract_class_interface/apj-shape" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/b7_abstract_class_interface/thuc_hanh/Comparable/apj-shape" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/b8_clean_code/java-cleancode-refactoring-renaming" vcs="Git" />
   </component>
 </project>
