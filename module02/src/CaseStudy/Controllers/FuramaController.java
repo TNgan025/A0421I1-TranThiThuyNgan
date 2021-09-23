@@ -1,8 +1,7 @@
 package CaseStudy.Controllers;
 
 import CaseStudy.services.EmployeeService;
-import CaseStudy.services.Impl.CustomerServiceImpl;
-import CaseStudy.services.Impl.EmployeeServiceImpl;
+import CaseStudy.services.Impl.*;
 
 import java.util.Scanner;
 
@@ -35,18 +34,10 @@ public class FuramaController {
                 break;
             }
             case 3:
-                System.out.println("1. Display facility");
-                System.out.println("2. Add new facility");
-                System.out.println("3. Display list facility maintenance");
-                System.out.println("4. Return main menu");
+                displayFacilityMenu();
                 break;
             case 4:
-                System.out.println("1. Add new booking");
-                System.out.println("1. Display list booking");
-                System.out.println("3. Create new constracts");
-                System.out.println("4. Display list contracts");
-                System.out.println("5. Edit contracts");
-                System.out.println("6. Return main menu");
+                displayBookingMenu();
                 break;
             case 5:
                 System.out.println("1. Display customers use service");
@@ -54,11 +45,11 @@ public class FuramaController {
                 System.out.println("4. Return main menu");
                 break;
             case 6:
-                System.out.println("Exit");
+                System.exit(6);
                 break;
-//            default:
-//                System.out.println("No choice!");
-//                break;
+            default:
+                System.out.println("No choice!");
+                break;
         }
     }
 
@@ -69,8 +60,7 @@ public class FuramaController {
         System.out.println("3. Edit employee");
         System.out.println("4. Return main menu");
         Scanner scanner = new Scanner(System.in);
-        int check = scanner.nextInt();
-        switch (check) {
+        switch (scanner.nextInt()) {
             case 1:
                 employeeService.display();
                 break;
@@ -80,14 +70,15 @@ public class FuramaController {
             case 3:
                 employeeService.edit();
                 break;
-           case 4:
-               displayMainMenu();
+            case 4:
+                displayMainMenu();
                 break;
-         default:
-            System.out.println("No choice!");
-               break;
+            default:
+                System.out.println("No choice!");
+                break;
         }
     }
+
     public static void displayCustomerMenu() {
         CustomerServiceImpl customerService = new CustomerServiceImpl();
         System.out.println("1. Display list customers");
@@ -95,22 +86,107 @@ public class FuramaController {
         System.out.println("3. Edit customer");
         System.out.println("4. Return main menu");
         Scanner scanner = new Scanner(System.in);
-        int check = scanner.nextInt();
-        switch (check) {
-    case 1:
-        customerService.display();
-        break;
-    case 2:
-        customerService.addNew();
-        break;
-    case 3:
-        customerService.edit();
-        break;
-    case 4:
-        displayMainMenu();
-        break;
-}
+        switch (scanner.nextInt()) {
+            case 1:
+                customerService.display();
+                break;
+            case 2:
+                customerService.addNew();
+                break;
+            case 3:
+                customerService.edit();
+                break;
+            case 4:
+                displayMainMenu();
+                break;
+        }
     }
 
+    public static void displayFacilityMenu() {
+        FacilityServiceImpl facilityService = new FacilityServiceImpl();
+        System.out.println("1. Display facility");
+        System.out.println("2. Add new facility");
+        System.out.println("3. Display list facility maintenance");
+        System.out.println("4. Return main menu");
+        Scanner scanner = new Scanner(System.in);
+        switch (scanner.nextInt()) {
+            case 1:
+                facilityService.display();
+                break;
+            case 2:
+                addNewFacilityMenu();
+                break;
+            case 3:
+                facilityService.displayMaintain();
+                break;
+            case 4:
+                displayMainMenu();
+        }
+    }
+
+    public static void addNewFacilityMenu() {
+        FacilityServiceImpl facilityService = new FacilityServiceImpl();
+        System.out.println("1. Add new Villa");
+        System.out.println("2. Add new House");
+        System.out.println("3. Add new Room");
+        System.out.println("4. Return main menu");
+        Scanner scanner = new Scanner(System.in);
+        switch (scanner.nextInt()) {
+            case 1:
+                facilityService.addNewVilla();
+                displayFacilityMenu();
+                break;
+            case 2:
+                facilityService.addNewHouse();
+                displayFacilityMenu();
+                break;
+            case 3:
+                facilityService.addNewRoom();
+                displayFacilityMenu();
+                break;
+            case 4:
+                displayFacilityMenu();
+                break;
+        }
+    }
+
+    public static void displayBookingMenu() {
+        BookingServiceImpl bookingService = new BookingServiceImpl();
+        ContractServiceImpl contractService = new ContractServiceImpl();
+        System.out.println("1. Add new booking");
+        System.out.println("1. Display list booking");
+        System.out.println("3. Create new contracts");
+        System.out.println("4. Display list contracts");
+        System.out.println("5. Edit contracts");
+        System.out.println("6. Return main menu");
+        Scanner scanner = new Scanner(System.in);
+        switch (scanner.nextInt()) {
+            case 1:
+                bookingService.addBooking();
+                displayBookingMenu();
+                break;
+            case 2:
+                bookingService.displayBooking();
+                displayBookingMenu();
+                break;
+            case 3:
+                contractService.createNewContract();
+                displayBookingMenu();
+                break;
+            case 4:
+                contractService.displayListContract();
+                displayBookingMenu();
+                break;
+            case 5:
+
+                break;
+            case 6:
+                displayMainMenu();
+                break;
+            default:
+                System.out.println("No choice!");
+                break;
+        }
+    }
 }
 

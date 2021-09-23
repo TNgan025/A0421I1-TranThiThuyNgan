@@ -14,7 +14,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void display() {
         for (Employee employee : employeeList) {
-            System.out.println(employeeList.toString());
+            System.out.println(employee.toString());
         }
     }
 

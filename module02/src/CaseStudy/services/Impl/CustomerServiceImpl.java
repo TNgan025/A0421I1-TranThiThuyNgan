@@ -14,7 +14,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public void display() {
         for (Customer customer : customerList) {
-            System.out.println(customerList.toString());
+            System.out.println(customer.toString());
         }
     }
 

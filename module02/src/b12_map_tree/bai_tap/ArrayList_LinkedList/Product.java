@@ -1,21 +1,21 @@
 package b12_map_tree.bai_tap.ArrayList_LinkedList;
 
 public class Product {
-    public String ID;
+    public int ID;
     public String name;
     public Integer price;
 
-    public Product(String ID, String name, Integer price) {
+    public Product(int ID, String name, Integer price) {
         this.ID = ID;
         this.name = name;
         this.price = price;
     }
 
-    public String getID() {
+    public int getID() {
         return ID;
     }
 
-    public void setID(String ID) {
+    public void setID(int ID) {
         this.ID = ID;
     }
 

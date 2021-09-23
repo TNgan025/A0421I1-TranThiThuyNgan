@@ -4,52 +4,64 @@ import java.sql.Time;
 
 public abstract class Facility {
     //Các loại dịch vụ này sẽ bao có các thông tin: Tên dịch vụ, Diện tích sử dụng, Chi phí thuê, Số lượng người tối đa, Kiểu thuê (bao gồm thuê theo năm, tháng, ngày, giờ.
-    private String ServiceName;
-    private double RoomArea;
-    private Integer Price;
-    private Integer maxPerson;
-    private Time time;
+    private String idFacility;
+    private String nameService;
+    private double areaUse;
+    private Integer rentalPrice;
+    private Integer rentalPeopleMax;
+    private String styleRental;
 
     public Facility() {
     }
 
-    public String getServiceName() {
-        return ServiceName;
+    public Facility(String idFacility, String nameService, double areaUse, int rentalPrice, int rentalPeopleMax, String styleRental) {
     }
 
-    public void setServiceName(String serviceName) {
-        ServiceName = serviceName;
+    public String getIdFacility() {
+        return idFacility;
     }
 
-    public double getRoomArea() {
-        return RoomArea;
+    public void setIdFacility(String idFacility) {
+        this.idFacility = idFacility;
     }
 
-    public void setRoomArea(double roomArea) {
-        RoomArea = roomArea;
+    public String getNameService() {
+        return nameService;
     }
 
-    public Integer getPrice() {
-        return Price;
+    public void setNameService(String nameService) {
+        this.nameService = nameService;
     }
 
-    public void setPrice(Integer price) {
-        Price = price;
+    public double getAreaUse() {
+        return areaUse;
     }
 
-    public Integer getMaxPerson() {
-        return maxPerson;
+    public void setAreaUse(double areaUse) {
+        this.areaUse = areaUse;
     }
 
-    public void setMaxPerson(Integer maxPerson) {
-        this.maxPerson = maxPerson;
+    public Integer getRentalPrice() {
+        return rentalPrice;
     }
 
-    public Time getTime() {
-        return time;
+    public void setRentalPrice(Integer rentalPrice) {
+        this.rentalPrice = rentalPrice;
     }
 
-    public void setTime(Time time) {
-        this.time = time;
+    public Integer getRentalPeopleMax() {
+        return rentalPeopleMax;
+    }
+
+    public void setRentalPeopleMax(Integer rentalPeopleMax) {
+        this.rentalPeopleMax = rentalPeopleMax;
+    }
+
+    public String getStyleRental() {
+        return styleRental;
+    }
+
+    public void setStyleRental(String styleRental) {
+        this.styleRental = styleRental;
     }
 }
