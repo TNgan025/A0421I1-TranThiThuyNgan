@@ -1,0 +1,28 @@
+body{
+    font-family: Tahoma;
+    width: 900px;
+    margin: 20px;
+    font-size: 18px;
+}
+#Top{
+    text-align: left;
+    padding-bottom: 7px;
+}
+#Main{
+    position: center;
+    text-indent: 50px;
+    text-align: justify;
+}
+h1{
+    font-size:50px;
+    margin-bottom: 1px;
+}
+.bold{
+    font-weight: bold;
+}
+.light-blue{
+    color: deepskyblue;
+}
+.blue{
+    color: blue;
+}
