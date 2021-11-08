@@ -5,6 +5,7 @@
   Time: 11:02 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -24,7 +25,6 @@
     <fieldset>
         <legend>Product information</legend>
         <table>
-            //    Các thuộc tính của sản phẩm bao gồm: id, tên sản phẩm, giá sản phẩm, mô tả của sản phẩm, nhà sản xuất
             <tr>
                 <td>ID: </td>
                 <td><input type="text" name="ID" id="ID"></td>

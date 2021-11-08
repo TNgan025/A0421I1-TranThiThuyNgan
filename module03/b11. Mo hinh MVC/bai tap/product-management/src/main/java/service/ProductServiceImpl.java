@@ -18,27 +18,27 @@ public class ProductServiceImpl implements ProductService {
         products.put(3, new Product(3, "Samsung", 800, "Samsung S20","Samsung"));
     }
     @Override
-    public List<Product> findAll() {
+    public List<Product> findAll(){
         return new ArrayList<>(products.values());
     }
 
     @Override
-    public void save(Product product) {
+    public void save(Product product){
         products.put(product.getID(),product);
     }
 
     @Override
-    public Product findById(int id) {
+    public Product findById(int id){
         return products.get(id);
     }
 
     @Override
-    public void update(int id, Product product) {
+    public void update(int id, Product product){
     products.put(id,product);
     }
 
     @Override
-    public void remove(int id) {
+    public void remove(int id){
     products.remove(id);
     }
 }

@@ -6,7 +6,7 @@ private int ID;
 private String name;
 private int price;
 private String description;
-private String Producer;
+private String producer;
 
     public Product() {
     }
@@ -16,7 +16,7 @@ private String Producer;
         this.name = name;
         this.price = price;
         this.description = description;
-        Producer = producer;
+        this.producer = producer;
     }
 
     public int getID() {
@@ -52,10 +52,10 @@ private String Producer;
     }
 
     public String getProducer() {
-        return Producer;
+        return producer;
     }
 
     public void setProducer(String producer) {
-        Producer = producer;
+        this.producer = producer;
     }
 }
